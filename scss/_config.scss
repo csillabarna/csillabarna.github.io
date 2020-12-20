@@ -1,0 +1,21 @@
+$primary-color: rgb(83, 74, 74);
+$secondary-color: rgb(123, 194, 212);
+
+$font-weights: (
+  "regular":400,
+  "medium":500,
+  "bold": 700
+);
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+}
+
+
+
