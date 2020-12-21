@@ -133,18 +133,17 @@
 }
 
 .about {
+  padding-top: 4rem;
   padding-bottom: 2rem;
+  overflow: hidden;
 }
 
 .about__bio-image {
   height: 50vh;
-  width: 100%;
-  background: linear-gradient(to right, rgba(83, 74, 74, 0.9), rgba(83, 74, 74, 0.3)), url("../../assets/profile-pic-professional.jpg") center top;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
+  width: 120%;
+  background: url("../../assets/profile-pic-professional.jpg") no-repeat;
+  background-position: 25% 75%;
+  background-size: contain;
 }
 
 .about__bio-image p {
@@ -152,12 +151,17 @@
 }
 
 .about__bio {
-  width: 80%;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  padding: 2rem 4rem;
 }
 
-.about__bio .text-secondary {
-  padding-bottom: 1rem;
+.about .social-icons {
+  display: flex;
+  flex-direction: column;
 }
 
 body {
