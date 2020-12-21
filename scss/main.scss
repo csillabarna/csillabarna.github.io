@@ -1,6 +1,7 @@
 @import 'config';
 @import 'home';
 @import 'menu';
+@import 'about';
 
 //font-family: 'Raleway', sans-serif;
 //font-family: 'Sigmar One', cursive;
@@ -22,6 +23,10 @@ h3 {
 a {
   color: white;
   text-decoration: none;
+}
+
+.text-secondary{
+  color: $secondary-color;
 }
 
 header {
