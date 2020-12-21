@@ -48,3 +48,33 @@
     }
   }
 }
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  opacity: 0.96;
+  visibility: hidden;
+
+  &.open {
+    visibility: visible;
+  }
+  // starting from off the page at the top (-100%)
+  .menu-nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background: $primary-color;
+    list-style-type: none;
+    padding-right: 1rem;
+    transform: translateY(-100%);
+
+    &.open {
+      transform: translateY(0);
+    }
+   
+  }
+}
