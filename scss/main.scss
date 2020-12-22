@@ -46,28 +46,20 @@ main {
   width: 100%;
 
   .social-icons {
-      display: flex;
-      flex-direction: column;
-       position: fixed;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
     bottom: 1rem;
     left: 1rem;
+    font-size: 1.5rem;
 
     a {
       padding: 0.4rem;
 
       &:hover {
-        color: $secondary-color;
+        color: $light;
       }
     }
   }
 }
 
-footer {
-  font-size: 1rem;
-  position: fixed;
-  bottom: 0.4rem;
-  right: 1rem;
-  text-align: right;
-  padding: 1rem;
-  color: white;
-}

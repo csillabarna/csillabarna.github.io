@@ -3,8 +3,11 @@ const burger = document.querySelector('.menu-btn__burger')
 const nav = document.querySelector('.nav')
 const menuNav = document.querySelector('.menu-nav')
 const navItems = Array.from(document.querySelectorAll('.menu-nav__item'))
-
+const slides = document.getElementsByClassName('mySlides')
+const dots = document.getElementsByClassName('dot')
+const header = document.querySelector('.header')
 let showMenu = false
+let slideIndex = 1
 
 function toggleMenu() {
   if (!showMenu){
@@ -25,9 +28,6 @@ function toggleMenu() {
 menuBtn.addEventListener('click', toggleMenu)
 
 
-let slideIndex = 1
-showSlides(slideIndex)
-
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n)
@@ -40,8 +40,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   let i
-  const slides = document.getElementsByClassName('mySlides')
-  const dots = document.getElementsByClassName('dot')
+
   if (n > slides.length) {
     slideIndex = 1
   }
@@ -57,3 +56,31 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = 'block'
   dots[slideIndex - 1].className += ' active'
 }
+showSlides(slideIndex)
+
+// hide navbar when scrolling
+
+let prevScrollpos = window.pageYOffset
+window.onscroll = function() {
+  const currentScrollPos = window.pageYOffset
+  if (prevScrollpos > currentScrollPos) {
+    header.style.top = '0'
+  } else {
+    header.style.top = '-120px'
+  }
+  prevScrollpos = currentScrollPos
+}
+
+// keyboard navigation
+function keyboard (event){ 
+  switch (event.keyCode){
+    case 37:
+      plusSlides(-1)
+      break
+    case 39:
+      plusSlides(+1)
+      break
+  }
+}
+
+window.addEventListener('keydown', keyboard)

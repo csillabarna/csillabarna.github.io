@@ -1,3 +1,7 @@
+header{
+  background-color: $primary-color;
+
+}
 .menu-btn {
   position: absolute;
   z-index: 1;
@@ -54,6 +58,7 @@
   width: 100vw;
   opacity: 0.98;
   visibility: hidden;
+  background-color: $primary-color;
 
   &.open {
     visibility: visible;

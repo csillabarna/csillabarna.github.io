@@ -4,6 +4,7 @@
   }
   .nav {
     visibility: visible;
+    position: relative;
     
     .menu-nav {
       display: block;
@@ -22,14 +23,50 @@
       }
     }
   }
-.about__bio {
+.about {
+  height: 100vh;
+  &H{
+    text-align: center;
+    padding: 2rem;
+    font-size: 3rem;
+  }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   font-size: 2rem;
+
+  &__bio-image{
+    background-position: 35% 65%;
+    background-size: contain;
+
+
+  }
+  &__bio{
+  position: relative;
+  right: 13rem;
+  height: fit-content;
+  }
 }
 
 .projects{
+  margin-bottom: 18rem;
+  h1{
+    font-size: 3rem;
+    padding: 2rem;
+  }
+  height: 100vh;
 
-font-size: 1.5rem;
+
 }
+.skills{
+  margin:5rem;
+  padding: 5rem;
+  font-size: 2rem;
+  h1{
+    font-size: 3rem;
+    padding: 2rem;
+  }
+
 }
 
 
+}
