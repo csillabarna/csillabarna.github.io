@@ -20,4 +20,23 @@ $font-weights: (
 }
 
 
+@mixin media-md {
+  @media screen and (min-width: 768px){
+  @content;
+}
+
+}
+@mixin media-lrg {
+@media screen and (min-width: 1024px){
+  @content;
+}
+
+}
+@mixin media-xlrg {
+@media screen and (min-width: 1600px){
+  @content;
+}
+
+}
+
 
