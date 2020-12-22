@@ -1,0 +1,30 @@
+.skills {
+  height: 100vh;
+  padding-bottom: 4rem;
+  h1 {
+    margin: 2rem 0;
+    font-size: 2.5 rem;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  &__items {
+    align-items: center;
+    justify-items: center;
+    height: 50vh;
+    width: 60vw;
+    margin: 2rem auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+  }
+
+  &__item {
+    position: relative;
+    overflow: hidden;
+    }
+  
+
+
+
+}

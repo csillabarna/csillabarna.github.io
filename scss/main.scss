@@ -3,8 +3,10 @@
 @import 'menu';
 @import 'about';
 @import 'projects';
+@import 'skills';
+@import 'contact';
 @import 'responsive';
-
+@import 'carousel';
 //font-family: 'Raleway', sans-serif;
 //font-family: 'Sigmar One', cursive;
 
@@ -20,6 +22,7 @@ h1,
 h2,
 h3 {
   font-weight: weight(regular);
+  text-align: center;
 }
 
 a {
@@ -43,7 +46,9 @@ main {
   width: 100%;
 
   .social-icons {
-    position: fixed;
+      display: flex;
+      flex-direction: column;
+       position: fixed;
     bottom: 1rem;
     left: 1rem;
 

@@ -9,9 +9,9 @@
     background:
       // linear-gradient(to right, rgba($primary-color, 0.9), rgba($primary-color, 0.3)),
       url("../../assets/profile-pic-professional.jpg") no-repeat;
-    background-position: 25% 75%;
+    background-position: 35% 65%;
     background-size: contain;
-    
+    margin-top: 3rem;    
 
     p {
       margin-bottom: 2rem;
@@ -24,12 +24,7 @@
     justify-content: center;
     text-align: justify;
     padding: 3rem 4rem;
-    
+    border-bottom: 5px solid white;
   }
-  .social-icons {
-    display: flex;
-    flex-direction: column;
-    
-
-}
+  
 }
