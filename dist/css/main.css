@@ -193,7 +193,19 @@
   width: 100%;
 }
 
-.social-icons {
+.projects__btns {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 5px;
+  font-size: 2rem;
+}
+
+.projects__btns a:hover {
+  color: #ffe3d8;
+}
+
+.projects .social-icons {
   display: flex;
   flex-direction: column;
 }
