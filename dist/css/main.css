@@ -213,6 +213,7 @@ header {
 .skills {
   height: 100vh;
   padding-bottom: 4rem;
+  font-size: 3rem;
 }
 
 .skills h1 {
@@ -229,7 +230,7 @@ header {
   width: 60vw;
   margin: 2rem auto 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
 }
 
@@ -314,11 +315,17 @@ header {
   .skills {
     margin: 5rem;
     padding: 5rem;
-    font-size: 2rem;
+    font-size: 5rem;
   }
   .skills h1 {
     font-size: 3rem;
     padding: 2rem;
+  }
+  .skills__items {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .skills__item {
+    margin: 4rem;
   }
 }
 

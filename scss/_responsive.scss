@@ -60,10 +60,17 @@
 .skills{
   margin:5rem;
   padding: 5rem;
-  font-size: 2rem;
+  font-size: 5rem;
   h1{
     font-size: 3rem;
     padding: 2rem;
+  }
+  &__items{
+    grid-template-columns: repeat(5, 1fr);
+
+  }
+  &__item{
+    margin:4rem;
   }
 
 }
