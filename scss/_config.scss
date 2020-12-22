@@ -1,5 +1,7 @@
-$primary-color: rgb(83, 74, 74);
-$secondary-color: rgb(123, 194, 212);
+$primary-color: #050125;
+$secondary-color:#ffe3d8;
+$light:#03506f;
+$lighter:#bbbbbb;
 
 $font-weights: (
   "regular":400,
@@ -7,7 +9,7 @@ $font-weights: (
   "bold": 700
 );
 
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;

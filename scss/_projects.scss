@@ -1,0 +1,34 @@
+.projects {
+  padding-bottom: 2rem;
+  h1 {
+    margin: 2rem 0;
+    font-size: 2.5 rem;
+    text-align: center;
+  }
+
+  &__items {
+    width: 60vw;
+    margin: 2rem auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+
+  &__item {
+    position: relative;
+    border-bottom: 5px solid $secondary-color;
+    overflow: hidden;
+    cursor: pointer;
+    img {
+      width: 100%;
+    }
+     
+  
+  
+  }
+
+}
+.social-icons {
+  display: flex;
+  flex-direction: column;
+}
