@@ -1,21 +1,32 @@
 .about {
-  padding-top: 4rem;
+  background:
+  linear-gradient(
+  rgba($primary-color, 0.8),
+  rgba($primary-color, 1)),
+  url("../../assets/me.png") no-repeat;
   padding-bottom: 2rem;
   overflow: hidden;
-
+&H{
+  background:
+  linear-gradient(
+  to bottom,
+  rgba(rgb(28, 28, 53), 0.1),
+  rgba(rgba(136, 121, 102, 0.384), 0.3));
+}
+  figure{
+    display: flex;
+    text-align: center;
+    align-items: start;
+    justify-content: center;
+    margin-top: 2rem;
+  }
   &__bio-image {
-    height: 50vh;
-    width: 120%;
-    background:
-      // linear-gradient(to right, rgba($primary-color, 0.9), rgba($primary-color, 0.3)),
-      url("../../assets/profile-pic-professional.jpg") no-repeat;
-    background-position: 35% 65%;
-    background-size: contain;
-    margin-top: 3rem;    
+    border-radius: 2rem;
 
-    p {
-      margin-bottom: 2rem;
-    }
+       width: 300px;   
+    
+
+  
   }
   &__bio {
     display: flex;
@@ -24,6 +35,7 @@
     justify-content: center;
     text-align: justify;
     padding: 3rem 4rem;
+    font-size: 1.5rem;
     // border-bottom: 5px solid white;
   }
   

@@ -1,9 +1,25 @@
 .projects {
   padding-bottom: 2rem;
+  border-radius: 2%;
+
+  background:
+  linear-gradient(
+    to bottom,
+    rgba($primary-color, 0.85),
+    rgba($primary-color, 1)
+  ),
+   url('../../assets/projects.png') center top;
+  background-size: cover;
   h1 {
     margin: 2rem 0;
     font-size: 2rem;
     text-align: center;
+    background:
+    linear-gradient(
+      to bottom,
+      rgba($primary-color, 0.9),
+      rgba($primary-color, 0.0)
+    ),
   }
 
   &__items {
@@ -22,24 +38,20 @@
     img {
       width: 100%;
     }
-   }
-  
-&__btns{
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  padding: 5px;
-  font-size: 3rem;
- a{
-  &:hover {
-    color:$secondary-color;
+  }
 
-}
- } 
+  &__btns {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 3rem;
+    font-size: 3rem;
+    a {
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
 
-}
-.social-icons {
-  display: flex;
-  flex-direction: column;
-}
+
 }

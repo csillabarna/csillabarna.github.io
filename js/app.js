@@ -6,6 +6,7 @@ const navItems = Array.from(document.querySelectorAll('.menu-nav__item'))
 const slides = document.getElementsByClassName('mySlides')
 const dots = document.getElementsByClassName('dot')
 const header = document.querySelector('.header')
+const footer = document.querySelector('.social-icons')
 let showMenu = false
 let slideIndex = 1
 
@@ -33,7 +34,7 @@ function plusSlides(n) {
   showSlides(slideIndex += n)
 }
 
-// Thumbnail image controls
+// dots
 function currentSlide(n) {
   showSlides(slideIndex = n)
 }
@@ -58,20 +59,7 @@ function showSlides(n) {
 }
 showSlides(slideIndex)
 
-// hide navbar when scrolling
-
-let prevScrollpos = window.pageYOffset
-window.onscroll = function() {
-  const currentScrollPos = window.pageYOffset
-  if (prevScrollpos > currentScrollPos) {
-    header.style.top = '0'
-  } else {
-    header.style.top = '-120px'
-  }
-  prevScrollpos = currentScrollPos
-}
-
-// keyboard navigation
+// keyboard navigation for carousel
 function keyboard (event){ 
   switch (event.keyCode){
     case 37:
@@ -84,3 +72,20 @@ function keyboard (event){
 }
 
 window.addEventListener('keydown', keyboard)
+
+// hide navbar and footer when scrolling down
+//  - show when scrolling up
+
+let prevScrollpos = window.pageYOffset
+window.onscroll = function() {
+  const currentScrollPos = window.pageYOffset
+  if (prevScrollpos > currentScrollPos) {
+    header.style.top = '0'
+    footer.style.top = '150px'
+  } else {
+    header.style.top = '-150px'
+    footer.style.top = '-250px'
+  }
+  prevScrollpos = currentScrollPos
+}
+

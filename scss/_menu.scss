@@ -1,7 +1,6 @@
 header{
   background-color: $primary-color;
-
-}
+  }
 .menu-btn {
   position: absolute;
   z-index: 1;
@@ -54,7 +53,7 @@ header{
 .nav {
   position: fixed;
   top: 0;
-  left: 0;
+  left: -2rem;
   width: 100vw;
   opacity: 0.98;
   visibility: hidden;

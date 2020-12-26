@@ -5,17 +5,18 @@
 }
 
 .home {
+  margin-bottom: 4rem;
   height: 100vh;
-  padding-top: 30vh;
+  padding-top: 40vh;
   overflow: hidden;
   align-items: center;
   text-align: center;
-  background: linear-gradient(to right, rgba(5, 1, 37, 0.9), rgba(5, 1, 37, 0.3)), url("../../assets/background.jpeg") center top;
+  background: linear-gradient(to bottom, rgba(70, 70, 92, 0.6), #130e3f), url("../../assets/bg.png") center top;
   background-size: cover;
 }
 
 .home__name {
-  font-size: 8rem;
+  font-size: 6rem;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   border-bottom: 2px solid white;
@@ -27,7 +28,7 @@
 }
 
 header {
-  background-color: #050125;
+  background-color: #130e3f;
 }
 
 .menu-btn {
@@ -84,11 +85,11 @@ header {
 .nav {
   position: fixed;
   top: 0;
-  left: 0;
+  left: -2rem;
   width: 100vw;
   opacity: 0.98;
   visibility: hidden;
-  background-color: #050125;
+  background-color: #130e3f;
 }
 
 .nav.open {
@@ -102,7 +103,7 @@ header {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  background: #050125;
+  background: #130e3f;
   list-style-type: none;
   padding-right: 1rem;
   transform: translateY(-100%);
@@ -137,22 +138,26 @@ header {
 }
 
 .about {
-  padding-top: 4rem;
+  background: linear-gradient(rgba(19, 14, 63, 0.8), #130e3f), url("../../assets/me.png") no-repeat;
   padding-bottom: 2rem;
   overflow: hidden;
 }
 
-.about__bio-image {
-  height: 50vh;
-  width: 120%;
-  background: url("../../assets/profile-pic-professional.jpg") no-repeat;
-  background-position: 35% 65%;
-  background-size: contain;
-  margin-top: 3rem;
+.aboutH {
+  background: linear-gradient(to bottom, rgba(28, 28, 53, 0.1), rgba(136, 121, 102, 0.3));
 }
 
-.about__bio-image p {
-  margin-bottom: 2rem;
+.about figure {
+  display: flex;
+  text-align: center;
+  align-items: start;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.about__bio-image {
+  border-radius: 2rem;
+  width: 300px;
 }
 
 .about__bio {
@@ -162,16 +167,21 @@ header {
   justify-content: center;
   text-align: justify;
   padding: 3rem 4rem;
+  font-size: 1.5rem;
 }
 
 .projects {
   padding-bottom: 2rem;
+  border-radius: 2%;
+  background: linear-gradient(to bottom, rgba(19, 14, 63, 0.85), #130e3f), url("../../assets/projects.png") center top;
+  background-size: cover;
 }
 
 .projects h1 {
   margin: 2rem 0;
   font-size: 2rem;
   text-align: center;
+  background: linear-gradient(to bottom, rgba(19, 14, 63, 0.9), rgba(19, 14, 63, 0));
 }
 
 .projects__items {
@@ -197,7 +207,7 @@ header {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  padding: 5px;
+  padding: 3rem;
   font-size: 3rem;
 }
 
@@ -205,38 +215,48 @@ header {
   color: #ffe3d8;
 }
 
-.projects .social-icons {
-  display: flex;
-  flex-direction: column;
-}
-
 .skills {
   height: 100vh;
   padding-bottom: 4rem;
-  font-size: 3rem;
+  background: linear-gradient(to bottom, rgba(19, 14, 63, 0.85), #130e3f), url("../../assets/skills.png") center top;
+  background-size: cover;
 }
 
 .skills h1 {
   margin: 2rem 0;
-  font-size: 2.5 rem;
-  text-align: center;
   padding-bottom: 2rem;
+  font-size: 2.5rem;
+  background: linear-gradient(rgba(19, 14, 63, 0.9), rgba(19, 14, 63, 0));
 }
 
 .skills__items {
+  font-size: 3rem;
   align-items: center;
   justify-items: center;
-  height: 50vh;
+  height: 80vh;
   width: 60vw;
   margin: 2rem auto 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 3rem;
 }
 
 .skills__item {
   position: relative;
   overflow: hidden;
+}
+
+.skills img {
+  max-width: 50px;
+  max-height: 45px;
+}
+
+.skills .small {
+  margin: 15px;
+}
+
+.skills .big, .skills .bigger {
+  font-size: 5rem;
 }
 
 .contact {
@@ -246,7 +266,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to right, rgba(5, 1, 37, 0.9), rgba(5, 1, 37, 0.3)), url("../../assets/connect.jpeg") no-repeat center top;
+  background: linear-gradient(to top, rgba(19, 14, 63, 0.8), #130e3f), url("../../assets/connect.jpeg") no-repeat center top;
   background-size: cover;
 }
 
@@ -263,6 +283,12 @@ header {
 }
 
 @media screen and (min-width: 768px) {
+  .home {
+    padding-top: 50vh;
+  }
+  .home__name {
+    font-size: 8rem;
+  }
   .menu-btn {
     visibility: hidden;
   }
@@ -312,20 +338,28 @@ header {
     font-size: 3rem;
     padding: 2rem;
   }
-  .skills {
-    margin: 5rem;
-    padding: 5rem;
-    font-size: 5rem;
-  }
   .skills h1 {
     font-size: 3rem;
     padding: 2rem;
   }
   .skills__items {
-    grid-template-columns: repeat(5, 1fr);
+    font-size: 6rem;
+    margin-top: 4rem;
+    grid-template-columns: repeat(4, 1fr);
   }
-  .skills__item {
-    margin: 4rem;
+  .skills .bigger {
+    font-size: 8rem;
+  }
+  .skills .big {
+    font-size: 6rem;
+  }
+  .skills img {
+    max-width: 7rem;
+    max-height: 5rem;
+    text-align: center;
+  }
+  .contact {
+    margin-top: 8rem;
   }
 }
 
@@ -369,11 +403,10 @@ header {
 
 /* Caption text */
 .projects_description {
-  display: flex;
   color: #ffe3d8;
   font-size: 1.5rem;
   max-width: 100%;
-  padding: 1rem 3rem;
+  padding: 1.5rem 4rem;
   text-align: justify;
   align-items: center;
 }
@@ -411,7 +444,7 @@ header {
 }
 
 body {
-  background: #050125;
+  background: #130e3f;
   color: white;
   height: 100vh;
   font-family: 'Raleway', sans-serif;
