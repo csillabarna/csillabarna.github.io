@@ -7,6 +7,8 @@
   <title>portfolioCodessCsilla</title>
   <link rel="stylesheet" href="/dist/css/main.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="css/animate.css">
+
   <link
     href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;0,800;1,100&family=Sigmar+One&display=swap"
     rel="stylesheet">
@@ -58,6 +60,8 @@
         <span class="home__name--first">Csilla</span>
         Barna
       </h1>
+      <hr>
+      <br>
       <h2>
         Junior Software Developer
       </h2>
@@ -67,7 +71,9 @@
     <h1 class="aboutH">About Me</h1>
     <section id="me" class="about">
       <figure >
+        <div class=about_img-cont>
         <img class="about__bio-image" src="../../assets/profile-pic-professional.jpg" alt="">
+      </div>
       </figure>
       <div class="about__bio">
         <p>Lorem ipsum dolor sit amet consectetur
@@ -87,7 +93,7 @@
       <h1>My Projects</h1>
       <div class="slideshow-container">
         <div class="mySlides fade">
-          <img src="/../../assets/devmap.gif" style="width:100%">
+          <img src="../../assets/letter-bg.jpeg" style="width:100%">
           <h3>Know your Heritage</h3>
           <div class="projects_description">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vel sunt temporibus sed nihil soluta,
@@ -111,7 +117,8 @@
           </div>
         </div>
         <div class="mySlides fade">
-          <img src="../../assets/connect.jpeg" style="width:100%">
+          <video src="./assets/dev.map.mp4" width="100%" muted autoplay loop>  
+          </video>
           <h3>dev.map</h3>
           <div class="projects_description">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vel sunt temporibus sed nihil soluta,
@@ -136,8 +143,9 @@
         </div>
 
         <div class="mySlides fade">
-          <img src="../../assets/background.jpeg" style="width:100%">
-          <h3>Movie Search</h3>
+          <video src="./assets/movieSearch.mp4" width="100%" muted autoplay loop>  
+          </video>  
+            <h3>Movie Search</h3>
           <div class="projects_description">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vel sunt temporibus sed nihil soluta,
               corrupti eius voluptatum natus, ipsam enim alias. Magnam, reiciendis veritatis molestiae optio maiores
@@ -158,10 +166,12 @@
               <i class="fab fa-github-alt"></i>
             </a>
           </div>
-        </div>
+        </div> 
         <div class="mySlides fade">
-          <img src="/../../assets/letter-bg.jpeg" style="width:100%">
-          <h3>Know your Heritage</h3>
+          <video src="./assets/partyPop.mp4" width="100%" muted autoplay loop>  
+
+          </video>
+          <h3>partyPOP</h3>
           <div class="projects_description">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vel sunt temporibus sed nihil soluta,
               corrupti eius voluptatum natus, ipsam enim alias. Magnam, reiciendis veritatis molestiae optio maiores
@@ -234,16 +244,17 @@
             <i class="devicon-express-original-wordmark"></i>
           </a>
         </div>
-        <div class="skills__item bigger">
-          <a href="#">
-            <i class="devicon-webpack-plain-wordmark"></i>
-          </a>
-        </div>
         <div class="skills__item">
           <a href="#">
             <i class="fab fa-npm"></i>
           </a>
         </div>
+        <div class="skills__item bigger">
+          <a href="#">
+            <i class="devicon-webpack-plain-wordmark"></i>
+          </a>
+        </div>
+       
         <div class="skills__item small" style="background-color:rgb(199, 211, 233); border-radius:10px">
           <img src="../../assets/flask.svg" alt="">
         </div>
@@ -295,13 +306,14 @@
     <!-- CONTACT -->
     <!-- get fontawesome -->
     <section id="connect" class="contact">
-      <h2>Contact Me...</h2>
-      <div>
-        <a href="#">
+      <h2>
+        Get in touch...</h2>
+      <div class="contact__list">
+        <a href="https://www.linkedin.com/in/csilla-barna/" target="_blank">
           <i class="fab fa-linkedin fa-2x"></i>
         </a>
-        <a href="#">
-          <i class="fab fa-github fa-2x"></i>
+        <a href="mailto:barnacsilla89@gmail.com" target="_blank">
+          <i class="far fa-envelope xtra"></i>
         </a>
       </div>
     </section>
@@ -309,13 +321,13 @@
     <footer>
       <section>
         <div class="social-icons">
-          <a href="#">
+          <a href="https://www.linkedin.com/in/csilla-barna/" target="_blank">
             <i class="fab fa-linkedin fa-2x"></i>
           </a>
-          <a href="#">
+          <a href="https://twitter.com/CodessCsilla" target="_blank">
             <i class="fab fa-twitter fa-2x"></i>
           </a>
-          <a href="#">
+          <a href="https://github.com/csillabarna" target="_blank">
             <i class="fab fa-github fa-2x"></i>
           </a>
       </section>
@@ -326,6 +338,10 @@
   <script src="https://kit.fontawesome.com/c1b257e9a0.js" crossorigin="anonymous"></script>
 
   <script src="./js/app.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+  new WOW().init()
+  </script>
 
 </body>
 
