@@ -14,17 +14,21 @@
    url('../../assets/bg.png') center top;
   background-size: cover;
 
+  hr{
+  @include animation;
+  border:$secondary-color solid 3px;
+ }
   &__name{
+    @include ani;
+
     font-size: 6rem;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
-    border-bottom: 2px solid white;
 
     &--first{
       color: $secondary-color;
       font-weight: weight(bold);
-
-    }
+          }
   }
 
 

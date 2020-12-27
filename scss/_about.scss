@@ -20,10 +20,21 @@
     justify-content: center;
     margin-top: 2rem;
   }
+  &_img-cont{
+  background:
+  linear-gradient(
+  to bottom,
+  rgba(rgba(172, 137, 85, 0.384), 0.6 ),
+  rgba(rgb(165, 155, 127), 0.8));
+    width: 350px;
+    height: 620px;
+    padding-top: 15px;
+    padding-left: 18px;
+    border-radius: 2rem;
+  }
   &__bio-image {
     border-radius: 2rem;
-
-       width: 300px;   
+    width: 350px;   
     
 
   

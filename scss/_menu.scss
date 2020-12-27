@@ -9,6 +9,7 @@ header{
   height: 20px;
   width: 28px;
   cursor: pointer;
+  @include ease;
 
   &__burger {
     position: absolute;
@@ -17,6 +18,8 @@ header{
     width: 28px;
     height: 3px;
     background: white;
+    @include ease;
+
 
     &::before {
       content: "";
@@ -25,6 +28,8 @@ header{
       width: 28px;
       height: 3px;
       background-color: white;
+      @include ease;
+
     }
 
     &::after {
@@ -34,9 +39,11 @@ header{
       width: 20px;
       height: 3px;
       background-color: white;
+      @include ease;
+
     }
     &.open {
-      transform: rotate(720deg);
+      transform: rotate(180deg);
       background: transparent;
 
       &::before {
@@ -58,6 +65,8 @@ header{
   opacity: 0.98;
   visibility: hidden;
   background-color: $primary-color;
+  @include ease;
+
 
   &.open {
     visibility: visible;
@@ -74,6 +83,8 @@ header{
     list-style-type: none;
     padding-right: 1rem;
     transform: translateY(-100%);
+    
+
 
     &.open {
       transform: translateY(0);
@@ -81,6 +92,8 @@ header{
 
     &__item {
       transform: translateX(100vw);
+      @include ease;
+
 
       &.open {
         transform: translateX(0);
@@ -95,9 +108,21 @@ header{
       text-transform: uppercase;
       padding: 2rem 0;
       font-weight: weight(regular);
+      @include ease;
+      font-weight: bold;
+
+
      &:hover {
         color: $secondary-color;
       }
     }
   }
+
+
+  @for $i from 1 through 5 {
+    .menu-nav__item:nth-child(#{$i}) {
+      transition-delay: ($i * 0.1s) + 0.25s;
+    }
+
+}
 }

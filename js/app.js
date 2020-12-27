@@ -23,6 +23,7 @@ function toggleMenu() {
     menuNav.classList.remove('open')
     navItems.forEach(item =>item.classList.remove('open'))
     showMenu = false
+    window.onload
   }
 }
 
@@ -82,6 +83,9 @@ window.onscroll = function() {
   if (prevScrollpos > currentScrollPos) {
     header.style.top = '0'
     footer.style.top = '150px'
+    header.style.transition = 'all 0.3s ease-in-out'
+    footer.style.transition = 'all 0.6s ease-in-out'
+
   } else {
     header.style.top = '-150px'
     footer.style.top = '-250px'

@@ -4,6 +4,15 @@
   padding: 0;
 }
 
+@keyframes expand {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
 .home {
   margin-bottom: 4rem;
   height: 100vh;
@@ -11,24 +20,29 @@
   overflow: hidden;
   align-items: center;
   text-align: center;
-  background: linear-gradient(to bottom, rgba(70, 70, 92, 0.6), #130e3f), url("../../assets/bg.png") center top;
+  background: linear-gradient(to bottom, rgba(70, 70, 92, 0.6), #041335), url("../../assets/bg.png") center top;
   background-size: cover;
 }
 
+.home hr {
+  animation: expand 0.8s ease-in;
+  border: #f5d4c6 solid 3px;
+}
+
 .home__name {
+  animation: expand 1s ease-in;
   font-size: 6rem;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
-  border-bottom: 2px solid white;
 }
 
 .home__name--first {
-  color: #ffe3d8;
+  color: #f5d4c6;
   font-weight: 700;
 }
 
 header {
-  background-color: #130e3f;
+  background-color: #041335;
 }
 
 .menu-btn {
@@ -39,6 +53,7 @@ header {
   height: 20px;
   width: 28px;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 
 .menu-btn__burger {
@@ -48,6 +63,7 @@ header {
   width: 28px;
   height: 3px;
   background: white;
+  transition: all 0.5s ease-in-out;
 }
 
 .menu-btn__burger::before {
@@ -57,6 +73,7 @@ header {
   width: 28px;
   height: 3px;
   background-color: white;
+  transition: all 0.5s ease-in-out;
 }
 
 .menu-btn__burger::after {
@@ -66,10 +83,11 @@ header {
   width: 20px;
   height: 3px;
   background-color: white;
+  transition: all 0.5s ease-in-out;
 }
 
 .menu-btn__burger.open {
-  transform: rotate(720deg);
+  transform: rotate(180deg);
   background: transparent;
 }
 
@@ -89,7 +107,8 @@ header {
   width: 100vw;
   opacity: 0.98;
   visibility: hidden;
-  background-color: #130e3f;
+  background-color: #041335;
+  transition: all 0.5s ease-in-out;
 }
 
 .nav.open {
@@ -103,7 +122,7 @@ header {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  background: #130e3f;
+  background: #041335;
   list-style-type: none;
   padding-right: 1rem;
   transform: translateY(-100%);
@@ -115,6 +134,7 @@ header {
 
 .nav .menu-nav__item {
   transform: translateX(100vw);
+  transition: all 0.5s ease-in-out;
 }
 
 .nav .menu-nav__item.open {
@@ -122,7 +142,7 @@ header {
 }
 
 .nav .menu-nav__item.active > a {
-  color: #ffe3d8;
+  color: #f5d4c6;
 }
 
 .nav .menu-nav__link {
@@ -131,14 +151,36 @@ header {
   text-transform: uppercase;
   padding: 2rem 0;
   font-weight: 400;
+  transition: all 0.5s ease-in-out;
+  font-weight: bold;
 }
 
 .nav .menu-nav__link:hover {
-  color: #ffe3d8;
+  color: #f5d4c6;
+}
+
+.nav .menu-nav__item:nth-child(1) {
+  transition-delay: 0.35s;
+}
+
+.nav .menu-nav__item:nth-child(2) {
+  transition-delay: 0.45s;
+}
+
+.nav .menu-nav__item:nth-child(3) {
+  transition-delay: 0.55s;
+}
+
+.nav .menu-nav__item:nth-child(4) {
+  transition-delay: 0.65s;
+}
+
+.nav .menu-nav__item:nth-child(5) {
+  transition-delay: 0.75s;
 }
 
 .about {
-  background: linear-gradient(rgba(19, 14, 63, 0.8), #130e3f), url("../../assets/me.png") no-repeat;
+  background: linear-gradient(rgba(4, 19, 53, 0.8), #041335), url("../../assets/me.png") no-repeat;
   padding-bottom: 2rem;
   overflow: hidden;
 }
@@ -155,9 +197,18 @@ header {
   margin-top: 2rem;
 }
 
+.about_img-cont {
+  background: linear-gradient(to bottom, rgba(172, 137, 85, 0.6), rgba(165, 155, 127, 0.8));
+  width: 350px;
+  height: 620px;
+  padding-top: 15px;
+  padding-left: 18px;
+  border-radius: 2rem;
+}
+
 .about__bio-image {
   border-radius: 2rem;
-  width: 300px;
+  width: 350px;
 }
 
 .about__bio {
@@ -173,7 +224,7 @@ header {
 .projects {
   padding-bottom: 2rem;
   border-radius: 2%;
-  background: linear-gradient(to bottom, rgba(19, 14, 63, 0.85), #130e3f), url("../../assets/projects.png") center top;
+  background: linear-gradient(to bottom, rgba(4, 19, 53, 0.85), #041335), url("../../assets/projects.png") center top;
   background-size: cover;
 }
 
@@ -181,7 +232,7 @@ header {
   margin: 2rem 0;
   font-size: 2rem;
   text-align: center;
-  background: linear-gradient(to bottom, rgba(19, 14, 63, 0.9), rgba(19, 14, 63, 0));
+  background: linear-gradient(to bottom, rgba(4, 19, 53, 0.9), rgba(4, 19, 53, 0));
 }
 
 .projects__items {
@@ -194,7 +245,7 @@ header {
 
 .projects__item {
   position: relative;
-  border-bottom: 5px solid #ffe3d8;
+  border-bottom: 5px solid #f5d4c6;
   overflow: hidden;
   cursor: pointer;
 }
@@ -212,13 +263,13 @@ header {
 }
 
 .projects__btns a:hover {
-  color: #ffe3d8;
+  color: #f5d4c6;
 }
 
 .skills {
   height: 100vh;
   padding-bottom: 4rem;
-  background: linear-gradient(to bottom, rgba(19, 14, 63, 0.85), #130e3f), url("../../assets/skills.png") center top;
+  background: linear-gradient(to bottom, rgba(4, 19, 53, 0.85), #041335), url("../../assets/skills.png") center top;
   background-size: cover;
 }
 
@@ -226,7 +277,7 @@ header {
   margin: 2rem 0;
   padding-bottom: 2rem;
   font-size: 2.5rem;
-  background: linear-gradient(rgba(19, 14, 63, 0.9), rgba(19, 14, 63, 0));
+  background: linear-gradient(rgba(4, 19, 53, 0.9), rgba(4, 19, 53, 0));
 }
 
 .skills__items {
@@ -266,20 +317,25 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to top, rgba(19, 14, 63, 0.8), #130e3f), url("../../assets/connect.jpeg") no-repeat center top;
+  background: linear-gradient(to top, rgba(4, 19, 53, 0.8), #041335), url("../../assets/connect.jpeg") no-repeat center top;
   background-size: cover;
 }
 
 .contact h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
+  font-size: 3rem;
+  margin-bottom: 5rem;
 }
 
-.contact h2__list {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 2rem;
-  font-size: 1.5rem;
+.contact__list {
+  font-size: 2rem;
+}
+
+.contact__list a {
+  padding: 30px;
+}
+
+.contact .xtra {
+  font-size: 4rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -364,7 +420,7 @@ header {
 }
 
 .slideshow-container {
-  max-width: 700px;
+  max-width: 800px;
   position: relative;
   margin: auto;
 }
@@ -403,7 +459,7 @@ header {
 
 /* Caption text */
 .projects_description {
-  color: #ffe3d8;
+  color: #f5d4c6;
   font-size: 1.5rem;
   max-width: 100%;
   padding: 1.5rem 4rem;
@@ -444,7 +500,7 @@ header {
 }
 
 body {
-  background: #130e3f;
+  background: #041335;
   color: white;
   height: 100vh;
   font-family: 'Raleway', sans-serif;
@@ -464,7 +520,7 @@ a {
 }
 
 .text-secondary {
-  color: #ffe3d8;
+  color: #f5d4c6;
 }
 
 header {
@@ -485,7 +541,7 @@ main .social-icons {
   position: fixed;
   bottom: 1rem;
   left: 1rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 main .social-icons a {

@@ -1,35 +1,28 @@
-.contact{
+.contact {
   height: 100vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
- 
-  
+  // padding-top: 30rem;
+  // padding-right: 45rem;
 
-  background:
-  linear-gradient(
-    to top,
-    rgba($primary-color, 0.8),
-    rgba($primary-color, 1)
-  ),
-   url('../../assets/connect.jpeg') no-repeat center top;
+  background: linear-gradient(to top, rgba($primary-color, 0.8), rgba($primary-color, 1)),
+    url("../../assets/connect.jpeg") no-repeat center top;
   background-size: cover;
 
-h2 {
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+  }
+  &__list {
     font-size: 2rem;
-    margin-bottom:  2rem;
-
-&__list {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 2rem;
-  font-size: 1.5rem;
+    a{
+      padding: 30px;
+    }
+  }
+  .xtra{
+    font-size: 4rem;
+  }
 }
-
-  }
-  
-  }
-
-
