@@ -39,20 +39,18 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   font-size: 2rem;
-
-  &__bio-image{
-    background-position: 35% 65%;
-    background-size: contain;
-
-
-  }
+   
   &__bio{
-  position: relative;
-  right: 13rem;
-  height: fit-content;
-  }
-}
+   font-size: 2rem;
+   line-height: 1.2;
+   justify-content: flex-start;
+   margin-left: -10rem;
+   margin-right: 8rem;
 
+    
+  }
+
+}
 .projects{
   margin-bottom: 18rem;
   h1{
@@ -60,9 +58,12 @@
     padding: 2rem;
   }
   height: 100vh;
-
-
+.projects_description{
+    line-height: 1.5;
+  }
 }
+
+
 .skills{
    
   h1{
@@ -81,6 +82,9 @@
   .big{
     font-size: 6rem;
   }
+  .xtra{
+    font-size: 11rem;
+  }
  
   img{
     max-width: 7rem;
@@ -94,6 +98,7 @@
 .contact{
   margin-top: 8rem ;
 }
+
 
 
 }

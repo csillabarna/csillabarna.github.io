@@ -1,7 +1,6 @@
 .projects {
   padding-bottom: 2rem;
   border-radius: 2%;
-
   background:
   linear-gradient(
     to bottom,
@@ -22,29 +21,11 @@
     ),
   }
 
-  &__items {
-    width: 60vw;
-    margin: 2rem auto 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 2rem;
-  }
-
-  &__item {
-    position: relative;
-    border-bottom: 5px solid $secondary-color;
-    overflow: hidden;
-    cursor: pointer;
-    img {
-      width: 100%;
-    }
-  }
-
   &__btns {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    padding: 3rem;
+    padding: 0.5rem 3rem;
     font-size: 3rem;
     a {
       &:hover {
