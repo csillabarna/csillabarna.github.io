@@ -1,6 +1,6 @@
 header{
   background-color: $primary-color;
-  }
+    }
 .menu-btn {
   position: absolute;
   z-index: 1;
@@ -60,16 +60,17 @@ header{
 .nav {
   position: fixed;
   top: 0;
-  left: -2rem;
-  width: 100vw;
+  right:0rem;
+  width: 50vw;
   opacity: 0.98;
   visibility: hidden;
   background-color: $primary-color;
-  @include ease;
+  
 
 
   &.open {
     visibility: visible;
+
   }
   // starting from off the page at the top (-100%)
   .menu-nav {
@@ -81,9 +82,10 @@ header{
     overflow: hidden;
     background: $primary-color;
     list-style-type: none;
-    padding-right: 1rem;
+    padding-right: 0rem;
     transform: translateY(-100%);
-    
+    @include ease;
+
 
 
     &.open {
@@ -97,6 +99,7 @@ header{
 
       &.open {
         transform: translateX(0);
+        
       }
       &.active > a {
         color: $secondary-color;
@@ -104,11 +107,10 @@ header{
     }
     &__link {
       display: inline-block;
-      font-size: 2rem;
+      font-size: 1.2rem;
       text-transform: uppercase;
       padding: 2rem 0;
       font-weight: weight(regular);
-      @include ease;
       font-weight: bold;
 
 

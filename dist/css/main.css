@@ -25,7 +25,7 @@
 }
 
 .home hr {
-  animation: expand 0.8s ease-in;
+  animation: expand 1s ease-in;
   border: #f5d4c6 solid 3px;
 }
 
@@ -103,12 +103,11 @@ header {
 .nav {
   position: fixed;
   top: 0;
-  left: -2rem;
-  width: 100vw;
+  right: 0rem;
+  width: 50vw;
   opacity: 0.98;
   visibility: hidden;
   background-color: #041335;
-  transition: all 0.5s ease-in-out;
 }
 
 .nav.open {
@@ -124,8 +123,9 @@ header {
   overflow: hidden;
   background: #041335;
   list-style-type: none;
-  padding-right: 1rem;
+  padding-right: 0rem;
   transform: translateY(-100%);
+  transition: all 0.5s ease-in-out;
 }
 
 .nav .menu-nav.open {
@@ -147,11 +147,10 @@ header {
 
 .nav .menu-nav__link {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   padding: 2rem 0;
   font-weight: 400;
-  transition: all 0.5s ease-in-out;
   font-weight: bold;
 }
 
@@ -199,8 +198,8 @@ header {
 
 .about_img-cont {
   background: linear-gradient(to bottom, rgba(172, 137, 85, 0.6), rgba(165, 155, 127, 0.8));
-  width: 350px;
-  height: 620px;
+  width: 250px;
+  height: 450px;
   padding-top: 15px;
   padding-left: 18px;
   border-radius: 2rem;
@@ -208,7 +207,7 @@ header {
 
 .about__bio-image {
   border-radius: 2rem;
-  width: 350px;
+  width: 250px;
 }
 
 .about__bio {
@@ -216,13 +215,13 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: justify;
-  padding: 3rem 4rem;
+  padding: 2rem 2rem;
   font-size: 1.5rem;
+  line-height: 1.2;
 }
 
 .projects {
-  padding-bottom: 2rem;
+  margin-bottom: 18rem;
   border-radius: 2%;
   background: linear-gradient(to bottom, rgba(4, 19, 53, 0.85), #041335), url("../../assets/projects.png") center top;
   background-size: cover;
@@ -324,6 +323,9 @@ header {
 }
 
 @media screen and (min-width: 768px) {
+  .header {
+    padding-top: 0rem;
+  }
   .home {
     padding-top: 50vh;
   }
@@ -336,6 +338,7 @@ header {
   .nav {
     visibility: visible;
     position: relative;
+    width: 98vw;
   }
   .nav .menu-nav {
     display: block;
@@ -362,16 +365,30 @@ header {
     padding: 2rem;
     font-size: 3rem;
   }
+  .about_img-cont {
+    width: 350px;
+    height: 620px;
+  }
+  .about__bio-image {
+    width: 350px;
+  }
   .about__bio {
     font-size: 2rem;
-    line-height: 1.2;
+    line-height: 1.3;
+    padding-top: 2rem;
     justify-content: flex-start;
-    margin-left: -10rem;
+    margin-left: -4rem;
     margin-right: 8rem;
   }
   .projects {
-    margin-bottom: 18rem;
     height: 100vh;
+  }
+  .projects .slideshow-container {
+    margin: auto;
+  }
+  .projects .prev, .projects .next {
+    top: 29rem;
+    font-size: 22px;
   }
   .projects h1 {
     font-size: 3rem;
@@ -379,6 +396,8 @@ header {
   }
   .projects .projects_description {
     line-height: 1.5;
+    font-size: 1.7rem;
+    text-align: justify;
   }
   .skills h1 {
     font-size: 3rem;
@@ -406,12 +425,27 @@ header {
   .contact {
     margin-top: 8rem;
   }
+  .social-icons {
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    font-size: 1.2rem;
+  }
+  .social-icons a {
+    padding: 0.6rem;
+  }
+  .social-icons a:hover {
+    color: #03506f;
+  }
 }
 
 .slideshow-container {
   max-width: 800px;
   position: relative;
-  margin: auto;
+  margin: 1rem;
 }
 
 /* Hide the images by default */
@@ -423,11 +457,11 @@ header {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 30rem;
+  top: 13rem;
   width: auto;
-  margin-top: -22px;
+  margin-top: -26px;
   padding: 16px;
-  color: white;
+  color: #f5d4c6;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -443,7 +477,7 @@ header {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #041335;
 }
 
 /* Caption text */
@@ -451,9 +485,8 @@ header {
   color: #f5d4c6;
   font-size: 1.5rem;
   max-width: 100%;
-  padding: 1.5rem 3rem;
   text-align: justify;
-  align-items: center;
+  padding: 1rem 1rem;
   line-height: 1.3;
 }
 
@@ -517,7 +550,7 @@ header {
   position: fixed;
   z-index: 2;
   width: 100%;
-  padding: 1rem;
+  padding-top: 3rem;
 }
 
 main {
@@ -525,20 +558,7 @@ main {
   width: 100%;
 }
 
-main .social-icons {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  bottom: 1rem;
-  left: 1rem;
-  font-size: 1rem;
-}
-
-main .social-icons a {
-  padding: 0.4rem;
-}
-
-main .social-icons a:hover {
-  color: #03506f;
+footer {
+  visibility: hidden;
 }
 /*# sourceMappingURL=main.css.map */

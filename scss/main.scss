@@ -38,28 +38,14 @@ header {
   position: fixed;
   z-index: 2;
   width: 100%;
-  padding: 1rem;
+  padding-top: 3rem;
 }
 
 main {
   height: 100%;
   width: 100%;
-
-  .social-icons {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    bottom: 1rem;
-    left: 1rem;
-    font-size: 1rem;
-
-    a {
-      padding: 0.4rem;
-
-      &:hover {
-        color: $light;
-      }
-    }
-  }
 }
 
+footer {
+  visibility: hidden;
+   }

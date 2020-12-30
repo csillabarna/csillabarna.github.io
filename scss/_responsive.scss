@@ -1,4 +1,7 @@
 @include media-md {
+  .header {
+   padding-top: 0rem;
+  }
   .home{
     padding-top: 50vh;
     &__name{
@@ -12,6 +15,8 @@
   .nav {
     visibility: visible;
     position: relative;
+    width: 98vw;
+
     
     .menu-nav {
       display: block;
@@ -39,20 +44,35 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   font-size: 2rem;
+  &_img-cont{
+      width: 350px;
+      height: 620px;
+      }
+    &__bio-image {
+      width: 350px;   
+      
+  
+    }
    
   &__bio{
    font-size: 2rem;
-   line-height: 1.2;
+   line-height: 1.3;
+   padding-top: 2rem;
    justify-content: flex-start;
-   margin-left: -10rem;
-   margin-right: 8rem;
-
-    
+   margin-left: -4rem;
+   margin-right: 8rem;    
   }
 
 }
 .projects{
-  margin-bottom: 18rem;
+ .slideshow-container {
+    margin: auto;
+  }
+  .prev, .next {
+    
+    top: 29rem;
+    font-size: 22px;
+  }
   h1{
     font-size: 3rem;
     padding: 2rem;
@@ -60,6 +80,8 @@
   height: 100vh;
 .projects_description{
     line-height: 1.5;
+    font-size: 1.7rem;
+    text-align: justify;
   }
 }
 
@@ -98,7 +120,22 @@
 .contact{
   margin-top: 8rem ;
 }
+.social-icons {
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  font-size: 1.2rem;
 
+  a {
+    padding: 0.6rem;
 
+    &:hover {
+      color: $light;
+    }
+  }
+}
 
 }

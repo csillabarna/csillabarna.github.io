@@ -3,6 +3,7 @@ const burger = document.querySelector('.menu-btn__burger')
 const nav = document.querySelector('.nav')
 const menuNav = document.querySelector('.menu-nav')
 const navItems = Array.from(document.querySelectorAll('.menu-nav__item'))
+
 const slides = document.getElementsByClassName('mySlides')
 const dots = document.getElementsByClassName('dot')
 const header = document.querySelector('.header')
@@ -23,11 +24,11 @@ function toggleMenu() {
     menuNav.classList.remove('open')
     navItems.forEach(item =>item.classList.remove('open'))
     showMenu = false
-    window.onload
   }
 }
 
 menuBtn.addEventListener('click', toggleMenu)
+nav.addEventListener('click', toggleMenu)
 
 
 // Next/previous controls
@@ -74,6 +75,7 @@ function keyboard (event){
 
 window.addEventListener('keydown', keyboard)
 
+
 // hide navbar and footer when scrolling down
 //  - show when scrolling up
 
@@ -82,9 +84,9 @@ window.onscroll = function() {
   const currentScrollPos = window.pageYOffset
   if (prevScrollpos > currentScrollPos) {
     header.style.top = '0'
-    footer.style.top = '150px'
-    header.style.transition = 'all 0.3s ease-in-out'
-    footer.style.transition = 'all 0.6s ease-in-out'
+    footer.style.top = '450px'
+    header.style.transition = 'all 0.8s ease-in-out'
+    footer.style.transition = 'all 1.3s ease-in-out '
 
   } else {
     header.style.top = '-150px'
