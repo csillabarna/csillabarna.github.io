@@ -1,3 +1,5 @@
 # Csilla Barna's portfolio
-🚧 under construction 🚧
+https://csillabarna.github.io/
+
+Go and have a look :)
 
