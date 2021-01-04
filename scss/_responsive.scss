@@ -132,6 +132,7 @@
 @include media-lrg {
   .about {
     &_img-cont {
+      margin-top: 2rem;
       width: 400px;
       height: 720px;
     }
@@ -151,9 +152,8 @@
    
     &__items {
       height: 100vh;
-      width: 120vh;
+      width: 105vh;
       grid-template-columns: repeat(5, 1fr);
-
     }
 
   }

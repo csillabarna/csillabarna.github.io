@@ -446,6 +446,7 @@ header {
 
 @media screen and (min-width: 1200px) {
   .about_img-cont {
+    margin-top: 2rem;
     width: 400px;
     height: 720px;
   }
@@ -460,7 +461,7 @@ header {
   }
   .skills__items {
     height: 100vh;
-    width: 120vh;
+    width: 105vh;
     grid-template-columns: repeat(5, 1fr);
   }
 }
