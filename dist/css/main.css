@@ -482,8 +482,8 @@ header {
     font-size: 2rem;
   }
   .projects .prev, .projects .next {
-    top: 39rem;
-    font-size: 2rem;
+    top: 40rem;
+    font-size: 1.8rem;
   }
   .skills {
     height: 100vh;
