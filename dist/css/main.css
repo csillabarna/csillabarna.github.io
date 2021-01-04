@@ -444,7 +444,7 @@ header {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1250px) {
   .about_img-cont {
     margin-top: 2rem;
     width: 400px;
@@ -466,7 +466,7 @@ header {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1250px) {
   .about {
     height: 100vh;
   }
