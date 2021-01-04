@@ -485,8 +485,11 @@ header {
     top: 39rem;
     font-size: 2rem;
   }
+  .skills {
+    height: 100vh;
+  }
   .skills__items {
-    font-size: 7rem;
+    font-size: 6rem;
   }
   .skills .bigger {
     font-size: 10rem;
