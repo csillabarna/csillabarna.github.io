@@ -11,11 +11,11 @@
     href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;0,800;1,100&family=Sigmar+One&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 
 <body>
-
   <!-- NAVBAR -->
   <header class="header">
     <div class="menu-btn">
@@ -66,14 +66,14 @@
     </section>
 
     <!-- ABOUT ME -->
-    <h1 class="aboutH">About Me</h1>
-    <section id="me" class="about">
+    <h1 data-aos="fade-down-right" data-aos-delay="20" class="aboutH">About Me</h1>
+    <section id="me" class="about" data-aos="fade-down-right" >
       <figure>
         <div class=about_img-cont>
           <img class="about__bio-image" src="/assets/profile-pic-professional.jpg" alt="">
         </div>
       </figure>
-      <div class="about__bio">
+      <div class="about__bio ">
         <p>
           I have always been deeply curious about how the world works and what makes things tick! It was this curiosity,
           paired with an analytical mindset and persistence which led me to pivot my career to programming.
@@ -89,9 +89,9 @@
       </div>
     </section>
     <!-- PROJECTS -->
-    <section id="work" class="projects">
+    <section data-aos="fade-up-left" id="work" class="projects">
       <h1>My Projects</h1>
-      <div class="slideshow-container">
+      <div data-aos="fade-in" class="slideshow-container">
         <div class="mySlides fade">
           <img src="/assets/heritage.gif" style="width:100%">
           <h3>Know your Heritage</h3>
@@ -187,78 +187,79 @@
     </section>
 
     <!-- SKILLS -->
-    <section id="stack" class="skills">
+    <section data-aos="fade-down-right" id="stack" class="skills">
       <h1>Skills</h1>
       <div class="skills__items">
-        <div class="skills__item">
+        <div data-aos="flip-up" class="skills__item">
           <i class="fab fa-js-square"></i>
         </div>
-        <div class="skills__item">
+        <div data-aos="flip-up" class="skills__item">
           <i class="devicon-python-plain-wordmark"></i>
         </div>
-        <div class="skills__item">
+        <div data-aos="flip-up"  class="skills__item">
           <i class="devicon-html5-plain-wordmark"></i>
         </div>
-        <div class="skills__item">
+        <div data-aos="flip-up" class="skills__item">
           <i class="devicon-css3-plain-wordmark"></i>
         </div>
-        <div class="skills__item">
+        <div data-aos="flip-up" class="skills__item">
           <i class="devicon-react-original-wordmark"></i>
         </div>
-        <div class="skills__item">
+        <div data-aos="flip-up" class="skills__item">
           <i class="fab fa-node"></i>
         </div>
-        <div class="skills__item big">
+        <div data-aos="flip-up" class="skills__item big">
           <i class="devicon-express-original-wordmark"></i>
         </div>
-        <div class="skills__item">
+        <div data-aos="flip-up" class="skills__item">
           <i class="fab fa-npm"></i>
         </div>
-        <div class="skills__item bigger">
+        <div data-aos="flip-up" class="skills__item bigger">
           <i class="devicon-webpack-plain-wordmark"></i>
         </div>
-        <div class="skills__item small" style="background-color:rgb(232, 236, 240); border-radius:10%">
+        <div data-aos="flip-up"  class="skills__item small" style="background-color:rgb(232, 236, 240); border-radius:10%">
           <img src="/assets/flask.svg" alt="">
         </div>
-        <div class="skills__item">
-          <i class="fab fa-sass"></i>
+        <div data-aos="flip-up" class="skills__item">
+          <i  class="fab fa-sass"></i>
         </div>
-        <div class="skills__item big">
+        <div data-aos="flip-up" class="skills__item big">
           <i class="devicon-mongodb-plain-wordmark"></i>
         </div>
-        <div class="skills__item">
+        <div data-aos="flip-up" class="skills__item">
           <i class="devicon-postgresql-plain-wordmark"></i>
         </div>
-        <div class="skills__item">
+        <div data-aos="flip-up" class="skills__item">
           <i class="devicon-babel-plain"></i>
         </div>
-        <div class="skills__item">
+        <div data-aos="flip-up" class="skills__item">
           <i class="devicon-git-plain-wordmark"></i>
         </div>
-        <div class="skills__item">
+        <div data-aos="flip-up" class="skills__item">
           <i class="devicon-github-original-wordmark"></i>
         </div>
-        <div class="skills__item xtra">
+        <div data-aos="flip-up" class="skills__item xtra">
           <i class="devicon-visualstudio-plain-wordmark"></i>
         </div>
-        <div class="skills__item">
+        <div data-aos="flip-up" class="skills__item">
           <i class="devicon-heroku-original-wordmark"></i>
         </div>
-        <div class="skills__item small" style="background-color: rgb(232, 236, 240); border-radius: 10%;">
+        <div  data-aos="flip-up" class="skills__item small" style="background-color: rgb(232, 236, 240); border-radius: 10%;">
           <img src="/assets/rest-api.png" alt="">
         </div>
       </div>
     </section>
     <!-- CONTACT -->
-    <section id="connect" class="contact">
+    <section data-aos="fade-up-left" id="connect" class=" contact">
       <h2>
         Get in touch...</h2>
-      <div class="contact__list">
+      <div class="contact__list" >
         <a href="https://www.linkedin.com/in/csilla-barna/" target="_blank">
-          <i class="fab fa-linkedin fa-2x"></i>
+          <i data-aos="zoom-in" data-aos-delay="50" class="fab fa-linkedin fa-2x"></i>
         </a>
         <a href="mailto:barnacsilla89@gmail.com" target="_blank">
-          <i class="far fa-envelope xtra"></i>
+          <i data-aos="zoom-in"     data-aos-delay="250"
+          class="far fa-envelope xtra"></i>
         </a>
       </div>
     </section>
@@ -280,6 +281,14 @@
   </main>
   <script src="https://kit.fontawesome.com/c1b257e9a0.js" crossorigin="anonymous"></script>
   <script src="./js/app.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset:300,
+      duration:1200
+    }
+    );
+  </script>
 </body>
 
 </html>
