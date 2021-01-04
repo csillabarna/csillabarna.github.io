@@ -396,6 +396,10 @@ header {
   .projects .projects_description {
     line-height: 1.5;
   }
+  .skills {
+    padding-top: 5rem;
+    height: 110vh;
+  }
   .skills h1 {
     font-size: 3rem;
     padding: 2rem;

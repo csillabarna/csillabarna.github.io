@@ -83,13 +83,13 @@ let prevScrollpos = window.pageYOffset
 window.onscroll = function() {
   const currentScrollPos = window.pageYOffset
   if (prevScrollpos > currentScrollPos) {
-    header.style.top = '0'
+    // header.style.top = '0'
     footer.style.top = '450px'
-    header.style.transition = 'all 0.8s ease-in-out'
+    // header.style.transition = 'all 0.8s ease-in-out'
     footer.style.transition = 'all 1.3s ease-in-out '
 
   } else {
-    header.style.top = '-150px'
+    // header.style.top = '-150px'
     footer.style.top = '-250px'
   }
   prevScrollpos = currentScrollPos
