@@ -38,7 +38,7 @@
     
 
   }
-  &__bio {
+  &__bio p{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,6 +47,7 @@
     padding: 2rem 2rem;
     font-size: 1.5rem;
     line-height: 1.2;
+    height: fit-content;
   }
   
 }
