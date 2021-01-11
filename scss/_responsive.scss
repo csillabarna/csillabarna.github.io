@@ -34,7 +34,7 @@
     }
   }
   .about {
-    height: 130vh;
+    height: fit-content;
     &H {
       text-align: center;
       padding: 2rem;
@@ -64,7 +64,7 @@
     }
     .prev,
     .next {
-      top: 29rem;
+      top: 31rem;
       font-size: 22px;
     }
     h1 {
@@ -165,7 +165,7 @@
 @include media-xlrg {
 
   .about {
-    height: 100vh;
+    height: fit-content;
    &__bio p {
       font-size: 2rem;
       line-height: 1.5;
@@ -182,7 +182,7 @@
           font-size: 2rem;
     }
     .prev, .next {
-      top:40rem;
+      top:41rem;
       font-size: 1.8rem;    
     }
 
