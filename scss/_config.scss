@@ -59,3 +59,22 @@ $font-weights: (
     }
   }
   
+ 
+  
+  
+  @keyframes pulse{
+    0%{
+      opacity: 0;
+    }
+    60%{
+      transform: rotate(-5deg) scale(4);
+    }
+    100%{
+      opacity:1;
+      transform: rotate(15deg) scale(1);
+    }
+  }
+  
+  
+  
+  

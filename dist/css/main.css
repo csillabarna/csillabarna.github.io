@@ -13,6 +13,19 @@
   }
 }
 
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    transform: rotate(-5deg) scale(4);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(15deg) scale(1);
+  }
+}
+
 .home {
   margin-bottom: 4rem;
   height: 100vh;
@@ -39,6 +52,27 @@
 .home__name--first {
   color: #e0bdae;
   font-weight: 700;
+}
+
+.home .stamp {
+  font-family: 'Dosis', sans-serif;
+  height: max-content;
+  width: max-content;
+  padding: 0.5rem;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #041335;
+  left: 78rem;
+  top: -15px;
+  border-radius: 5px;
+  position: relative;
+  background-color: #e0bdae;
+  animation-name: pulse;
+  animation-delay: 1.2s;
+  -webkit-animation-delay: 1.2s;
+  animation-duration: 0.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
 
 header {
