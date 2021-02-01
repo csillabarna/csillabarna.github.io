@@ -54,23 +54,6 @@
   font-weight: 700;
 }
 
-.home .stamp {
-  animation: pulse 1.2s 0.5s forwards;
-  font-family: 'Dosis', sans-serif;
-  height: max-content;
-  width: max-content;
-  padding: 0.5rem;
-  font-size: 4rem;
-  font-weight: 700;
-  color: #041335;
-  left: 74rem;
-  top: -45px;
-  border-radius: 5px;
-  position: relative;
-  background-color: #e0bdae;
-  opacity: 0;
-}
-
 header {
   background-color: #041335;
 }
@@ -479,6 +462,22 @@ header {
 }
 
 @media screen and (min-width: 1250px) and (min-height: 800px) {
+  .home .stamp {
+    animation: pulse 1.2s 0.5s forwards;
+    font-family: 'Dosis', sans-serif;
+    height: max-content;
+    width: max-content;
+    padding: 0.5rem;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #041335;
+    left: 74rem;
+    top: -45px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #e0bdae;
+    opacity: 0;
+  }
   .about_img-cont {
     margin-top: 2rem;
     width: 400px;

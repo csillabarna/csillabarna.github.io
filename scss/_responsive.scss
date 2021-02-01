@@ -133,6 +133,25 @@
 }
 
 @include media-lrg {
+  .home{
+    .stamp{
+      @include pulse;
+      font-family: 'Dosis', sans-serif;
+      height:max-content;
+      width:max-content;
+      padding: 0.5rem;
+      font-size: 4rem;
+      font-weight: weight(bold);
+      color: $primary-color;
+      left:74rem;
+      top:-45px;
+      border-radius:5px;
+      position:relative;
+      background-color:$secondary-color;
+      opacity: 0;
+    }
+  
+  }
   .about {
     &_img-cont {
       margin-top: 2rem;
