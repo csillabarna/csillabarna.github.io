@@ -54,6 +54,21 @@
   font-weight: 700;
 }
 
+.home .stamp-cont {
+  display: flex;
+  justify-content: center;
+}
+
+.home .stamp {
+  font-family: 'Dosis', sans-serif;
+  height: max-content;
+  width: max-content;
+  padding: 0.5rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #e0bdae;
+}
+
 header {
   background-color: #041335;
 }
@@ -462,22 +477,6 @@ header {
 }
 
 @media screen and (min-width: 1250px) and (min-height: 800px) {
-  .home .stamp {
-    animation: pulse 1.2s 0.5s forwards;
-    font-family: 'Dosis', sans-serif;
-    height: max-content;
-    width: max-content;
-    padding: 0.5rem;
-    font-size: 4rem;
-    font-weight: 700;
-    color: #041335;
-    left: 74rem;
-    top: -45px;
-    border-radius: 5px;
-    position: relative;
-    background-color: #e0bdae;
-    opacity: 0;
-  }
   .about_img-cont {
     margin-top: 2rem;
     width: 400px;
@@ -500,44 +499,57 @@ header {
 }
 
 @media screen and (min-width: 1600px) {
-  .about {
+  .home .stamp {
+    animation: pulse 1.2s 0.5s forwards;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #041335;
+    left: 30%;
+    top: -45px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #e0bdae;
+    opacity: 0;
+  }
+  .home .about {
     height: fit-content;
   }
-  .about__bio p {
+  .home .about__bio p {
     font-size: 2rem;
     line-height: 1.5;
     margin-right: 4rem;
     margin-left: -8rem;
   }
-  .projects .slideshow-container {
+  .home .projects .slideshow-container {
     max-width: 1100px;
   }
-  .projects .projects_description {
+  .home .projects .projects_description {
     font-size: 2rem;
   }
-  .projects .prev, .projects .next {
+  .home .projects .prev,
+  .home .projects .next {
     top: 41rem;
     font-size: 1.8rem;
   }
-  .skills {
+  .home .skills {
     height: 100vh;
   }
-  .skills__items {
+  .home .skills__items {
     font-size: 6rem;
   }
-  .skills .bigger {
+  .home .skills .bigger {
     font-size: 10rem;
   }
-  .skills .big {
+  .home .skills .big {
     font-size: 8rem;
   }
-  .contact h2 {
+  .home .contact h2 {
     font-size: 5rem;
   }
-  .contact__list {
+  .home .contact__list {
     font-size: 3rem;
   }
-  .contact__list .xtra {
+  .home .contact__list .xtra {
     font-size: 6rem;
   }
 }
