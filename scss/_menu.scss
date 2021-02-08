@@ -1,7 +1,6 @@
 header{
   background-color: $primary-color;
-
-    }
+  }
 .menu-btn {
   position: absolute;
   z-index: 1;
@@ -66,8 +65,10 @@ header{
   opacity: 0.98;
   visibility: hidden;
   background-color: $primary-color;
-  
-
+  background:url(/assets/logo.jpg);
+  background-position-x: 1%;
+  background-repeat: no-repeat;
+  background-size: contain;
 
   &.open {
     visibility: visible;
@@ -86,9 +87,7 @@ header{
     padding-right: 0rem;
     transform: translateY(-100%);
     @include ease;
-
-
-
+  
     &.open {
       transform: translateY(0);
     }
@@ -120,12 +119,13 @@ header{
       }
     }
   }
-
-
+ 
+ 
   @for $i from 1 through 5 {
     .menu-nav__item:nth-child(#{$i}) {
       transition-delay: ($i * 0.1s) + 0.25s;
     }
-
 }
+
+
 }

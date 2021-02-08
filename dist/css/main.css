@@ -136,6 +136,10 @@ header {
   opacity: 0.98;
   visibility: hidden;
   background-color: #041335;
+  background: url(/assets/logo.jpg);
+  background-position-x: 1%;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .nav.open {
